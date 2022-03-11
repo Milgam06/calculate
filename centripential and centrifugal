@@ -22,3 +22,16 @@ class CTF:
         V2_2 = math.pow(speed2, 2)
         result2 = {-1 * (mass2 * V2_2)} / radius2
         print(str(result2) + " J")
+
+Choice = str(input("구심력 or 원심력\n> "))
+if Choice == "구심력":
+    mass = float(input("질량> "))
+    radius = float(input("반지름> "))
+    speed = float(input("속도> "))
+    print(CTP(mass, radius, speed))
+
+elif Choice == "원심력":
+    mass = float(input("질량> "))
+    radius = float(input("반지름> "))
+    speed = float(input("속도> "))
+    print(CTF(mass, radius, speed))
