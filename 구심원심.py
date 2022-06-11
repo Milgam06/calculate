@@ -6,7 +6,7 @@ class CTP: #값 클래스 생성
         self.mass1 = float(mass1)
         self.speed1 = float(speed1)
         self.radius1 = float(radius1)
-        print("질량 > {}kg\n속력 > {}m/s\n반지름 > {}m".format(mass1, speed1, radius1))
+        print(f"질량 > {mass1}kg\n속력 > {speed1}m/s\n반지름 > {radius1}m")
         print("구심력 공식 > mv^/r")
         V2_1 = math.pow(speed1, 2)
         result1 = (mass1 * V2_1) / radius1
@@ -17,7 +17,7 @@ class CTF:
         self.mass2 = float(mass2)
         self.speed2 = float(speed2)
         self.radius2 = float(radius2)
-        print("질량 > {}kg\n속력 > {}m/s\n반지름 > {}m".format(mass2, speed2, radius2))
+        print(f"질량 > {mass2}kg\n속력 > {speed2}m/s\n반지름 > {radius2}m")
         print("원심력 공식 > -mv^/r")
         V2_2 = math.pow(speed2, 2)
         result2 = {-1 * (mass2 * V2_2)} / radius2
